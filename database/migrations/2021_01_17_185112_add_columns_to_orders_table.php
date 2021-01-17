@@ -16,6 +16,8 @@ class AddColumnsToOrdersTable extends Migration
         Schema::table('orders', function (Blueprint $table) {
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
+            $table->text('notes')->nullable();
+
         });
     }
 
